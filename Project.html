@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+
+    <!-- Bootstrap CSS -->
+
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <!-- Our own stylesheet -->
+
+
+
+  
+    <link rel="stylesheet" href="mainStyles.css" />  
+    
+    <!-- Icon-only -->
+
+
+
+
+    <script
+      src="https://kit.fontawesome.com/b41b9ce715.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+
+
+
+    <!-- Navigation section -->
+
+
+
+
+    <section id="navigation">
+       <nav
+        class="navbar navbar-expand-lg bg-dark navbar-dark bug-navigation-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-bug-slash icons"></i>Bug Fixer</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ticket.html">Tickets</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Other
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" onclick="memeberView()">Members</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="Login.html"  class="nav-link">Logout</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 btnShowSearch"
+                type="text"
+                placeholder="Search Project ID..."
+                aria-label="Search"
+                onkeyup="SearchFunction()"
+              />              
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+
+
+<!-- The content section     -->
+
+
+
+<div id = "blurrContainer">  
+<!-- The project table -->
+<section id="project-info">   
+  <div class="table-responsive-xxl"> 
+  <table class="the-table-content table table-dark table-striped table-bordered" id = "project-table">    
+    <thead class = "Top-Row">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Contributors </th>
+        <th><button type="button" class="btn btn-outline-light theNewButton">New Project</button></th>
+      </tr>
+    </thead>      
+     <tbody class = "table-main-body">    
+     </tbody>           
+  </table> 
+  </div> 
+</section>
+<footer>
+  <p>© Copyright Bug Fixer</p>
+</footer> 
+</div>
+
+
+<!-- The form section -->
+
+
+
+<section id = "theform" class = "hidden">
+  <form id="ticketForm" action="index.html" method="post">
+    <fieldset >
+    
+    <legend class="bg-dark"><i class="fa-solid fa-bug-slash icons"></i>Ticket</legend>
+    <ol>
+      <li>
+    <label lb-new-project" for="">Project Name</label>
+    <input type="text" id = "Project-Name">   
+  </li>
+  <li>
+    <label lb-new-project" for=""">Project Description</label>
+    <input type="text" id = "Project-Description">
+  </li>
+  <li>
+    <label lb-new-project for="" >Add member</label>
+    <!-- <input type="text" id = "Project-Member"> -->
+    <select  id="Project-Member">
+      
+    </select>
+  </li>
+    
+
+  </fieldset>
+    <div class = "close-form-button">
+        <button type="button" class="FormButtons  theCloseButton">Close</button>
+        <button type="reset" class="FormButtons theInsertButton">Insert</button>              
+        <button type="button" class="FormButtons theClearButton">Clear All</button>
+        <button type="button" class="FormButtons theDefaultButton">Load default projects</button>
+      </div>
+    
+</ol>
+  </form>
+  </section>
+
+
+
+
+<!-- jquery cdn -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- Bootstrap java -->
+
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+crossorigin="anonymous"
+></script>      
+<script src="java.js"></script> 
+
+
+
+</body>
+</html>

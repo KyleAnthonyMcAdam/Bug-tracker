@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail View</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Our own stylesheet -->
+
+    <link rel="stylesheet" href="DetailedView.css" />
+
+    <!-- Icon-only -->
+
+    <script
+      src="https://kit.fontawesome.com/b41b9ce715.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation section -->
+
+    
+<canvas></canvas>
+<div id="TicketView">
+    <!-- The form section -->
+    <h2 class="DetailedViewShortHeading">Ticket number</h2>
+    <section id="DetailedViewPopUP">
+      <label class="theDescription">Description:</label>
+      <label class="theIdentifier">Who Identified the issue:</label>
+      <label class="theDateIdentified">Date Identified:</label>
+      <label class="theRelatedProject">Project related To Issue:</label>
+      <label class="theAssignedPerson">Assigned to:</label>
+
+      <textarea
+        disabled
+        class="disable"
+        name="theDescription"
+        id="Project-DetailedView-Description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <input
+        disabled
+        class="disable"
+        type="text"
+        id="Who-Identified-the-issue"
+      />
+      <input disabled class="disable" type="text" id="Date-Identified" />
+      <input
+        disabled
+        class="disable"
+        type="text"
+        id="Project-related-To-Issue"
+      />
+      <input disabled class="disable" type="text" id="Assigned-to" />
+
+      <label class="theResolutionSummary">Resolution Summary:</label>
+      <label class="theStatus">Status:</label>
+      <label class="thePriority">Priority:</label>
+      <label class="theTargetResolutionDate">Target Resolution Date:</label>
+      <label class="theResolutionDate">Resolution Date:</label>
+
+      <textarea
+        disabled
+        class="disable"
+        name="theSummary"
+        id="Resolution-Summary"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <select disabled name="" class="disable" id="Status">
+        <option value="Open">Open</option>
+        <option value="Resolved">Resolved</option>
+        <option value="Overdue">Overdue</option>
+      </select>
+
+      <select disabled name="" class="disable" id="Priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input disabled class="disable" type="text" id="Target-Resolution-Date" />
+      <input disabled class="disable" type="date" id="Resolution-Date" />
+
+      <div id="buttons">
+        <button
+          type="button"
+          onclick="Back()"
+          class="btn btn-outline-dark buttons"
+        >
+          Back
+        </button>
+        <button
+          type="button"
+          onclick="Edit()"
+          class="btn btn-outline-dark buttons"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+          onclick="Save()"
+          class="btn btn-outline-dark buttons"
+        >
+          Save
+        </button>
+      </div>
+    </section>
+  </div>
+    <script src="DetailedView.js"></script>
+    <script src="Login.js"></script>
+  </body>
+</html>

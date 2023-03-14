@@ -1,0 +1,233 @@
+* {margin: 0; padding: 0}
+body {background: #000;}
+canvas {
+ width: 100vw;
+ height: 99vh;
+}
+
+body {
+  background-color: whitesmoke;
+  
+}
+.icons {
+  margin-right: 1rem;
+}
+
+.bug-navigation-bar {
+  padding: 2% 0;
+}
+
+.theNewButton {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+
+
+
+
+.FirstrowHeadings > label {
+  margin-left: 35px;
+  font-size: medium;
+}
+
+.FirstrowHeadings {
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
+
+.SecondrowHeadings {
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
+
+.DetailedViewShortHeading {
+color:whitesmoke;
+  display: inline-block;
+  position: relative;
+
+ 
+  height: 50px;
+  margin-left: 45%;
+  margin-top: 60px;
+  border-radius: 8px;
+}
+
+#DetailedViewPopUP {
+
+  margin: 1% auto;
+  width: 1130px;
+  height: 10%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:    rgba(0, 0, 0, 0.815);;
+  display: grid;
+  grid-template-columns: 450px 340px 340px;
+  grid-template-rows: 40px 100px 40px 100px 40px 100px 40px 100px 70px;
+  grid-template-areas:
+    "Head1 Head2 Head3 "
+    "Input1 Input2 Input3 "
+    "Input1 Head4 Head5 "
+    "Input1 Input4 Input5  "
+    "Head6 Head7 Head8 "
+    "Input6 Input7 Input8  "
+    "Input6 Head9 Head10"
+    "Input6 Input9 Input10"
+    "Buttons Buttons Buttons ";
+    color:aliceblue;
+    
+    
+}
+#buttons .theDescription {
+  grid-area: Head1;
+}
+.theIdentifier {
+  grid-area: Head2;
+}
+.theDateIdentified {
+  grid-area: Head3;
+}
+.theRelatedProject {
+  grid-area: Head4;
+}
+.theAssignedPerson {
+  grid-area: Head5;
+}
+#Project-DetailedView-Description {
+  grid-area: Input1;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+
+}
+input{
+  text-align: center;
+  background-color:black;
+  color: white;
+  border:2px solid white;
+}
+textarea
+{
+  text-align: center;
+  background-color:black;
+  color: white;
+  border:2px solid white;
+  border-radius:10px
+  
+}
+
+select
+{
+  margin-top: 10%;
+  height: 75px;
+  width: 90%;
+  margin-left: 3%;
+  border-radius: 10px;
+  text-align: center;
+  background-color:black;
+  color: white;
+  border:2px solid white;
+}
+
+textarea:disabled
+{
+  border:1px solid grey;
+  color:gray;
+}
+select:disabled
+{
+  border:1px solid grey;
+  color:gray;
+}
+input:disabled
+{
+  border:1px solid grey;
+  color:gray;
+}
+#Who-Identified-the-issue {
+  grid-area: Input2;
+}
+#Date-Identified {
+  grid-area: Input3;
+}
+#Project-related-To-Issue {
+  grid-area: Input4;
+}
+#Assigned-to {
+  grid-area: Input5;
+}
+.theResolutionSummary {
+  grid-area: Head6;
+}
+.theStatus {
+  grid-area: Head7;
+}
+.thePriority {
+  grid-area: Head8;
+}
+.theTargetResolutionDate {
+  grid-area: Head9;
+}
+.theResolutionDate {
+  grid-area: Head10;
+}
+#Resolution-Summary {
+  grid-area: Input6;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+}
+#Status {
+  grid-area: Input7;
+}
+#Priority {
+  grid-area: Input8;
+}
+#Target-Resolution-Date {
+  grid-area: Input9;
+}
+#Resolution-Date {
+  grid-area: Input10;
+}
+#buttons {
+  grid-area: Buttons;
+  text-align: center;
+}
+.buttons {
+  margin: 2%;
+  background-color:black;
+  color: white;
+  border:1px solid white;
+}
+
+#DetailedViewPopUP > label {
+  margin-left: 20%;
+  margin-bottom: 5px;
+  margin-top: 24px;
+ 
+}
+
+#DetailedViewPopUP > input {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#DetailedViewPopUP > button {
+  margin-top: 10px;
+  margin: 10px;
+  width: 90px;
+}
+
+#TicketView
+{
+position: absolute;
+top: 5%;
+left:18%;
+}

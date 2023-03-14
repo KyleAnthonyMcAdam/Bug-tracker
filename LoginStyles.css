@@ -1,0 +1,113 @@
+* {margin: 0; padding: 0}
+body {background: #000;}
+canvas {display: block;}
+
+.icons {
+  margin-right: 1rem;
+}
+
+#theform {
+  margin: 3% auto;
+  width: 20%;
+  z-index: 1;
+  position: fixed;
+  top: 10%;
+  left: 100px;
+  right: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 7% 0;
+  background-color: whitesmoke;
+}
+
+.theText {
+  width: 70%;
+}
+
+.blurr {
+  filter: blur(3px);
+}
+
+#ticketForm {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 200px;
+
+  width: 100%;
+  margin: 0;
+  margin-top: 100px;
+}
+#from-buttons {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#ticketForm ol {
+  list-style: none;
+  margin-left: 10%;
+}
+
+#ticketForm li {
+  margin-top: 1em;
+}
+
+#ticketForm fieldset {
+  width: 100%;
+  border: none;
+  background-color: whitesmoke;
+  border: black solid;
+}
+
+#ticketForm legend {
+  color: whitesmoke;
+  padding: 1em;
+}
+#ticketForm input {
+  border: 2px solid black;
+  width: 80%;
+  text-align: center;
+}
+#ticketForm select {
+  border: 2px solid black;
+  width: 80%;
+  text-align: center;
+}
+#ticketForm label {
+  font-weight: 600;
+  width: 40%;
+}
+
+.FormButtons {
+  width: 49%;
+  margin-top: 1%;
+  font-weight: 650;
+  border: 2.8px solid black;
+}
+
+.formBox {
+  width: 100%;
+  margin: auto;
+}
+#logo
+{
+ color: whitesmoke;
+ text-align: center;
+ margin-bottom: 50px;
+
+}
+button:hover
+{
+  background-color:rgb(33, 32, 32);
+  color:white
+}
+button:active
+{
+  background-color:black;
+  color:white
+}

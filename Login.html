@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+
+    <!-- Bootstrap CSS -->
+
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+   
+    <!-- Our own stylesheet -->
+
+
+
+  
+
+    <link rel="stylesheet" href="LoginStyles.css" />  
+    <!-- Icon-only -->
+
+
+
+
+    <script
+      src="https://kit.fontawesome.com/b41b9ce715.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+
+<canvas></canvas>
+
+<!-- The form section -->
+<section id = "theform" >
+  <h1 id="logo" href="#"><i class="fa-solid fa-bug-slash"></i>Bug Fixer</h1>
+  <form id="ticketForm"  method="post">
+        <fieldset >
+          <legend class="bg-dark"><i class="fa-solid fa-right-to-bracket icons"></i>Login</legend>
+          <ol >
+            <li>
+              <div class="dropdown">
+                <div>
+                  <label for="Username">Username:</label>
+                </div>
+                <div>
+                <select  id="Username">
+                  <option value="Administration">Administration</option>
+                  <option value="Member">Member</option>
+                </select>
+              </div>
+
+            </li>
+            <li>
+              <div>
+                <label for="Password">Password:</label>
+              </div>
+             
+              <input type="password" name="Password" value="" id="Password" />
+            </li>
+  
+ 
+
+        
+        </fieldset>
+    </div>
+
+    <div id="from-buttons">
+
+      <button  type="button" class="FormButtons" onclick="window.close()">EXIT</button>
+
+      <button  type="button" class="FormButtons" onclick="login()" >Login IN</button>
+
+      
+    </div>
+  </form>
+  </section>
+
+  
+
+
+<!-- jquery cdn -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- Bootstrap java -->
+
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+crossorigin="anonymous"
+></script>      
+
+<script src="Login.js"></script>
+
+
+</body>
+</html>

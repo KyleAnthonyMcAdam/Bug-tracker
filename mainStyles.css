@@ -1,0 +1,219 @@
+  /* main styles throught pages section */
+body {
+  background-color: white;
+}
+.icons {
+  margin-right: 1rem;
+}
+
+.bug-navigation-bar {
+  padding: 2% 0;
+}
+
+#project-info {
+  padding: 7% 0;
+  background-color: whitesmoke;
+  position: relative;
+  backdrop-filter: blur(100px);
+}
+
+.the-table-content {
+  margin: auto;
+  border: 1px solid grey;
+  border-spacing: 0;
+  position: relative;
+  width: 100%;
+}
+.Top-Row {
+  padding: 10px;
+}
+
+.theNewButton {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.the-table-content td,
+.the-table-content th {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+
+}
+th
+{
+  width: 10%;
+}
+
+table tr:nth-child(2n) {
+  background-color: grey;
+}
+
+.lb-new-project {
+  padding: 3px 0;
+}
+
+.close-form-button {
+  padding: 2% 0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 7% 0;
+  background-color: whitesmoke;
+}
+
+.theText {
+  width: 70%;
+}
+
+.blurr {
+  filter: blur(3px);
+}
+
+#member-info {
+  padding: 7% 0;
+  background-color: whitesmoke;
+  position: relative;
+  backdrop-filter: blur(100px);
+}
+
+.Rid {
+  width: auto;
+}
+
+
+/* The tickets from section */
+#theform {
+  margin: 3% auto;
+  width: 25%;
+
+  text-align: left;
+  /* position: absolute; */
+  z-index: 1;
+
+  position: fixed;
+  top: 25%;
+  left: 100px;
+  right: 100px;
+}
+
+#theform1 {
+  margin: 3% auto;
+  width: 25%;
+
+  text-align: left;
+  /* position: absolute; */
+  z-index: 1;
+
+  position: fixed;
+  top: 25%;
+  left: 100px;
+  right: 100px;
+}
+.form-group{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+  #theform {
+    margin: 3% auto;
+    width: 300px;
+
+    text-align: left;
+    z-index: 1;
+
+    position: fixed;
+    top: 25%;
+    left: 100px;
+    right: 100px;
+  }
+
+  #theform1 {
+    margin: 3% auto;
+    width: 500px;
+
+    text-align: left;
+    z-index: 1;
+
+    position: fixed;
+    top: 10%;
+    left: 100px;
+    right: 100px;
+  }
+}
+
+
+/* The forms section */
+.close-form-button {
+  padding: 2% 0;
+}
+#ticketForm {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 400px;
+
+  width: 100%;
+  margin: 0;
+}
+#from-buttons {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#ticketForm ol {
+  list-style: none;
+}
+
+#ticketForm li {
+  margin-top: 1em;
+}
+
+#ticketForm fieldset {
+  width: 100%;
+  border: none;
+  background-color: whitesmoke;
+  border: black solid;
+}
+
+#ticketForm legend {
+  color: whitesmoke;
+  padding: 1em;
+}
+#ticketForm input {
+  border: 2px solid black;
+  width: 50%;
+}
+#ticketForm label {
+  font-weight: 600;
+  width: 40%;
+}
+#ticketForm select {
+  border: 2px solid black;
+}
+
+.FormButtons {
+  width: 29%;
+  margin-top: 1%;
+  font-weight: 650;
+  border: 2.8px solid black;
+
+  margin-left: 2.5%;
+}
+
+.formBox {
+  width: 100%;
+  margin: auto;
+}
+#submitButton
+{
+width:50%;
+
+}
+
